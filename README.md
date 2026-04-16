@@ -1,6 +1,6 @@
-# SSH Remote Workbench
+# Codex SSH Remote Workbench
 
-This plugin is built around a simple remote-dev workflow:
+This codex plugin is built around a simple remote-dev workflow:
 
 - mount a remote directory into the current local folder with SSHFS
 - edit files locally through the mounted directory
