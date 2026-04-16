@@ -36,6 +36,12 @@ It currently defines:
 - infer `--cwd` from the current local directory when it is inside the mounted tree
 - fall back to the configured remote root when no local path mapping matches
 
+## Execution rule
+
+When using this plugin, command execution should default to the remote machine.
+That includes Python scripts, tests, builds, and other repo commands. Prefer
+`bin/rexec` unless the user explicitly asks for local execution.
+
 ## Recommended workflow
 
 ### 1. Mount a remote directory into the current local folder
@@ -65,6 +71,17 @@ Run a remote command:
 ```bash
 plugins/ssh-remote-workbench/bin/rexec -- ls -la
 ```
+
+As a rule, prefer:
+
+```bash
+plugins/ssh-remote-workbench/bin/rexec -- python script.py
+plugins/ssh-remote-workbench/bin/rexec -- pytest
+plugins/ssh-remote-workbench/bin/rexec -- cargo test
+```
+
+Do not default to local execution for those commands unless the user clearly
+asks for local execution.
 
 Preview the resolved host/cwd without executing:
 
