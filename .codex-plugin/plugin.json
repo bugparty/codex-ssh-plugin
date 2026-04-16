@@ -1,0 +1,40 @@
+{
+  "name": "ssh-remote-workbench",
+  "version": "0.1.0",
+  "description": "Work on a remote codebase through SSHFS, patch mounted files, and run remote commands over SSH.",
+  "author": {
+    "name": "Bowman Han",
+    "email": "fancycode@gmail.com",
+    "url": "https://0x1f0c.dev"
+  },
+  "homepage": "https://0x1f0c.dev",
+  "repository": "https://github.com/bugparty/codex-ssh-plugin.git",
+  "license": "MIT",
+  "keywords": [
+    "ssh",
+    "remote",
+    "terminal",
+    "apply-patch",
+    "remote-exec"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "SSH Remote Workbench",
+    "shortDescription": "Mount a remote codebase with SSHFS, edit files locally, and run commands remotely.",
+    "longDescription": "A Codex plugin for an SSHFS-first remote development workflow: mount the remote tree locally, edit mounted files, apply patch-style changes, and execute remote commands over SSH while keeping local and remote paths aligned.",
+    "developerName": "Bowman Han",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write",
+      "Execute"
+    ],
+    "websiteURL": "https://0x1f0c.dev",
+    "defaultPrompt": [
+      "Run a remote command from a mounted worktree with the bundled rexec wrapper.",
+      "Use the bundled apply_patch binary to update files in an SSHFS-mounted remote tree.",
+      "Map my current mounted directory to the remote cwd and inspect the environment."
+    ],
+    "brandColor": "#0F766E"
+  }
+}

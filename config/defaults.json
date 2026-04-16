@@ -1,0 +1,11 @@
+{
+  "default_host": "bowmanhan@192.168.34.111",
+  "remote_root": "/home/bowmanhan/Code",
+  "local_mount_root": "/Users/bowmanhan/qoe-boxr-research/incoming/sshfs_mount_test",
+  "path_mappings": [
+    {
+      "local_prefix": "/Users/bowmanhan/qoe-boxr-research/incoming/sshfs_mount_test",
+      "remote_prefix": "/home/bowmanhan/Code"
+    }
+  ]
+}
