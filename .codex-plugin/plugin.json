@@ -31,9 +31,9 @@
     ],
     "websiteURL": "https://0x1f0c.dev",
     "defaultPrompt": [
-      "Run a remote command from a mounted worktree with the bundled rexec wrapper.",
-      "Use the bundled apply_patch binary to update files in an SSHFS-mounted remote tree.",
-      "Map my current mounted directory to the remote cwd and inspect the environment."
+      "Mount a remote directory from an SSH host into the current local folder.",
+      "Run a remote command for the code mounted in the current local folder.",
+      "Map the current mounted directory to the remote cwd and inspect that environment."
     ],
     "brandColor": "#0F766E"
   }
